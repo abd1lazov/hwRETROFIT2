@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1832">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/container_heart"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:background="#D81B60">
+
+            <ImageView
+                android:id="@+id/image_heart"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12sp"
+            android:background="#A61DA4"
+            android:text="category"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_activity"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="press_next_to_get_some_activities"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginStart="35sp"
+            android:layout_marginBottom="30sp"
+            android:text="free"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="40sp"
+            android:layout_marginBottom="10sp"
+            android:text="price"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/text_participants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Participants"
+                android:textColor="#125683" />
+
+            <ImageView
+                android:id="@+id/image_participant_4"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_above="@+id/text_participants"
+                android:layout_marginStart="-3dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#3F51B5"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                android:layout_toEndOf="@+id/text_participants"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/image_participant_1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_above="@+id/text_participants"
+                android:layout_marginEnd="-3dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#3F51B5"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                android:layout_toStartOf="@+id/text_participants"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/image_participant_2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_above="@+id/text_participants"
+                android:layout_alignStart="@+id/text_participants"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#3F51B5"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                android:background="@color/black" />
+
+            <ImageView
+                android:id="@+id/image_participant_3"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_above="@+id/text_participants"
+                android:layout_alignEnd="@+id/text_participants"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#3F51B5"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                android:layout_toEndOf="@+id/image_participant_2"
+                android:background="@color/black" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/black"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        tools:ignore="UsingOnClickInXml" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_spinner"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSpinnerCategory">
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:backgroundTint="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textSpinnerCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="40sp"
+        android:text="category"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_next" />
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/price_slider"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:valueFrom="0.0"
+        android:valueTo="1"
+        android:stepSize="0.1"
+        app:haloColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_view_spinner"
+        app:layout_constraintTop_toBottomOf="@id/btn_next"
+        app:thumbColor="#3F51B5"
+        app:thumbStrokeColor="@color/white"
+        app:trackColorActive="#5C6BC0"
+        android:value="0.5"
+        android:contentDescription="slider_desc"
+        app:trackColorInactive="@color/white"
+        />
+
+
+    <TextView
+        android:id="@+id/text_price_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/price_slider"
+        app:layout_constraintStart_toEndOf="@+id/card_view_spinner" />
+
+    <TextView
+        android:id="@+id/text_accessibility_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Accessibilty"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/price_range_slider"
+        app:layout_constraintStart_toEndOf="@+id/card_view_spinner" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/price_range_slider"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:valueFrom="0.0"
+        android:valueTo="1"
+        app:haloColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_view_spinner"
+        app:layout_constraintTop_toBottomOf="@id/btn_next"
+        app:thumbColor="#3F51B5"
+        app:thumbStrokeColor="@color/white"
+        app:trackColorActive="#5C6BC0"
+        app:trackColorInactive="@color/white">
+
+    </com.google.android.material.slider.RangeSlider>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
